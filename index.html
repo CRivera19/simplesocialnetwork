@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body class="bg-dark">
-  <nav class="navbar navbar-expand-md navbar-light bg-primary">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-primary">
     <a class="navbar-brand" href="#">Simple Social Network</a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <form class="form-inline my-2 my-lg-0">
+      <form id="logInForm" class="form-inline my-2 my-lg-0">
         <label for="">Username: </label>
         <input class="form-control mr-sm-2 p-1" type="text" placeholder="Search">
         <label for="">Password: </label>
@@ -25,24 +25,25 @@
       </form>
     </div>
   </nav>
-  <main>
-    <div class="card offset-1 col-10 p-0 my-4">
+  <main id="frontPage">
+    <div id="welcome" class="card offset-1 col-10 p-0 my-4">
       <div class="card-header">
         <h3>Welcome back! <b>username</b></h3>
       </div>
       <div class="card-body">
-        <div class="form-group m-0">
+        <form id="user-form" class="form-group m-0">
           <label for="">What's on your mind?</label>
           <input type="text"
-            class="form-control p-2" name="" id="" aria-describedby="helpId" placeholder="Enter text here">
+            class="form-control p-2" name="" id="userPost" aria-describedby="helpId" placeholder="Enter text here">
           <button type="submit" class="btn btn-primary my-2">Submit</button>
-        </div>
+        </form>
       </div>
       <div class="card-footer text-muted">
         It's been TIME since your last post.
       </div>
     </div>
-    <div class="container col-10 p-0">
+    <div id="timeline" class="list-group offset-1 col-10 p-0">
+      <h1 class="text-primary">Timeline</h1>
       <div class="card">
         <img class="card-img-top" src="holder.js/100x180/" alt="">
         <div class="card-body">
@@ -60,9 +61,10 @@
     </div>
   </main>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
